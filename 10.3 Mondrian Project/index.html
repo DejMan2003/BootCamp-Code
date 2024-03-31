@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+    
+    
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .container
+    {
+      background-color: black;
+      display : grid;
+      gap: 9px;
+      grid-template-columns: auto auto;
+      grid-template-rows: 2fr 1fr;
+      width: 720px;
+      height: 720px;
+    }
+    .red
+    {
+      height: 414px;
+      width: 320px;
+      background-color: #E72F24;
+    }
+    .white-a
+    {
+      background-color: #F0F1EC;
+      height: 414px;
+      width: 428px;
+    }
+    .white-b
+    {
+      background-color: #F0F1EC;
+      height: 285px;
+      width: 320px;
+    }
+    .wwb-sec
+    {
+      display: grid;
+      grid-template-columns: 320px 378px 50px;
+    }
+    .white-c
+    {
+      background-color: #F0F1EC;
+      height: 285px;
+      width: 378px;
+    }
+    .bw-sect
+    {
+      display: grid;
+      grid-template-columns: 50px;
+      grid-template-rows: 130px 175px;
+    }
+    .blue
+    {
+      background-color: #004592;
+      grid-auto-columns: auto;
+      width: 50px;
+      height: 130px;
+    }
+  </style>
+</head>
+
+<body style = "background-color: black;">
+  <!-- Write your HTML here -->
+  <div class = "container">
+    <div class = "red"></div>
+    <div class = "white-a"></div>
+    <div class = "wwb-sect">
+    <div class = "white-b"></div>
+    <div class = "white-c"></div>
+    <div class = "bw-sect"></div>
+      <div class = "blue"></div>
+      <div class = "white-d"></div>
+    </div>
+  </div>
+    <div class = "yellow"></div>
+  </div>
+</body>
+
+</html>
