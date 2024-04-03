@@ -15,6 +15,11 @@
     background-position: 0% 50%;
   }
 }
+#signup:hover
+{
+  background-color: black;
+  color: white;
+}
 #mshead
 {
   background-color: black;
