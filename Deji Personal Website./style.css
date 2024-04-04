@@ -1,0 +1,29 @@
+
+marquee
+{
+  color: #333741;
+}
+#home
+{
+  display: flex;
+  width: 85%;
+  align-items: flex-start;
+  background-color: yellow;
+  height : 40vh;
+  align-content: flex-start;
+}
+body
+{
+      font-family: "Oswald", San-Serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+}
+
+nav
+{
+  padding-left : 4rem;
+}
