@@ -1,17 +1,4 @@
 
-marquee
-{
-  color: #333741;
-}
-#home
-{
-  display: flex;
-  width: 85%;
-  align-items: flex-start;
-  background-color: yellow;
-  height : 40vh;
-  align-content: flex-start;
-}
 body
 {
       font-family: "Oswald", San-Serif;
@@ -21,9 +8,20 @@ body
       height: 100vh;
       margin: 0;
       padding: 0;
+      color: white;
+}
+p
+{
+  color: white;
 }
 
 nav
 {
-  padding-left : 4rem;
+  display : flex;
+  align-items : center;
+  justify-content: center;
+}
+#comments
+{
+  background-color: rgba(255, 183, 0, 0.986);
 }
