@@ -10,12 +10,15 @@ var buttonColours = ["red","blue","green","yellow"];
 var level = 0;
 var started = false;
 
-$(document).keypress(function () {
+$(document).ready(function()
+{
+$(document).keydown(function (started) {
   if (!started) {
     $("#level-title").text("Level" + level);
     nextSequence();
     started = true;
   }
+  });
 });
 
 $(".btn").click(function()
