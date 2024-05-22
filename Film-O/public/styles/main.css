@@ -1,0 +1,29 @@
+.bar
+{
+  display: inline-flex;
+  justify-content: flex-end;
+  font-size: 15px;
+  display: block;
+  padding: 40px 40px;
+}
+.toppage
+{
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+h1
+{
+  font-size: 50px;
+}
+a
+{
+ color: white;
+ font-size: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
