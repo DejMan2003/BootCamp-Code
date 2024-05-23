@@ -1,1 +1,12 @@
-*DS_Store
+
+# Ignore all files except Markdown files and images
+/*
+!*.md
+!*.png
+!*.jpg
+!*.jpeg
+!*.gif
+!*.svg
+!*DS_Store
+# Allow .gitignore
+!.gitignore
