@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto-Search</title>
+  <style>
+ body {
+    font-family: Arial, sans-serif;
+      background-image: url("beehive.jpeg");
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      color: black;
+      text-align: center;
+    }
+  .container
+  {
+    border-radius : 7px;
+    background-color: rgba(255, 225, 0, 0.829);
+    width: auto;
+  }
+  label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+  .bid
+  {
+    background-color: rgb(4, 174, 4);
+    display: inline-block;
+    border-radius: 7px;
+    padding: 5px;
+;  }
+  .ask
+  {
+    background-color: rgb(203, 19, 19);
+    display: inline-block;
+    border-radius: 7px;
+    padding: 5px
+  }
+  #pq
+  {
+    color: white;
+  }
+  </style>
+
+</head>
+<body>
+  <marquee><h1>Crypto-Search</h1></marquee>
+<div class = "container">
+    <label>Symbol:</label>
+    <p><%= sym %></p>
+  <div class = "bid" id = "pq">
+      <label>Bid Price:</label>
+        <p><%= bidprice %></p>
+      <label>Bid Quantity:</label>
+        <p><%= bid %></p>
+  </div>
+  <div class = "ask" id = "pq">
+    <label>Ask Price:</label>
+      <p><%= askprice%> </p>
+    <label>Ask Quantity:</label>
+      <p><%= ask %></p>
+  </div>
+</div>
+<h1>Refresh the page to see the newer rates of the BTC-USD Exchange Rate.</h1>
+</body>
+</html>

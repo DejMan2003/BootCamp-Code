@@ -1,0 +1,93 @@
+README: How to Activate the Code for Crypto-Search and Form Example
+
+Table of Contents
+
+Introduction
+Prerequisites
+Setup Instructions
+Crypto-Search
+Form Example
+Running the Applications
+Additional Notes
+Introduction
+
+This README provides instructions on how to activate and run two HTML-based code examples: Crypto-Search and Form Example. The Crypto-Search displays cryptocurrency information, while the Form Example allows users to submit data through different HTTP methods.
+
+Prerequisites
+
+Before you begin, ensure you have the following:
+
+A web browser (e.g., Chrome, Firefox, Safari)
+A local server environment (e.g., Node.js with Express, Python with Flask, or a simple HTTP server)
+Setup Instructions
+
+Crypto-Search
+Save the HTML File:
+
+Create a file named crypto_search.html and paste the Crypto-Search code into this file.
+Create a Background Image:
+
+Ensure you have a background image named beehive.jpeg in the same directory as crypto_search.html.
+Install a Template Engine (optional):
+
+If the code contains template syntax like <%= sym %>, you will need a server-side template engine like EJS.
+Example for Node.js: npm install ejs
+Form Example
+Save the HTML File:
+
+Create a file named form_example.html and paste the Form Example code into this file.
+Backend Setup:
+
+The form example uses different HTTP methods (GET, POST, PUT, PATCH, DELETE), which require a backend server to handle the requests.
+Set up a server (e.g., using Node.js with Express):
+javascript
+Copy code
+const express = require('express');
+const app = express();
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.get('/get-secret', (req, res) => {
+  res.send(`GET request received: ${JSON.stringify(req.query)}`);
+});
+
+app.post('/post-secret', (req, res) => {
+  res.send(`POST request received: ${JSON.stringify(req.body)}`);
+});
+
+app.put('/put-secret', (req, res) => {
+  res.send(`PUT request received: ${JSON.stringify(req.body)}`);
+});
+
+app.patch('/patch-secret', (req, res) => {
+  res.send(`PATCH request received: ${JSON.stringify(req.body)}`);
+});
+
+app.delete('/delete-secret', (req, res) => {
+  res.send(`DELETE request received: ${JSON.stringify(req.body)}`);
+});
+
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+});
+Running the Applications
+
+Crypto-Search
+Open the HTML File:
+Open crypto_search.html in your web browser.
+View the Content:
+The page will display cryptocurrency information with a background image.
+Form Example
+Start the Backend Server:
+If you are using the provided Node.js example, run node your_server_file.js to start the server.
+Open the HTML File:
+Open form_example.html in your web browser.
+Submit the Form:
+Fill in the form fields and click the corresponding button to send the request. The response will be displayed in the response area.
+Additional Notes
+
+Ensure that your local server is running and accessible from your browser.
+Adjust the server port and routes as necessary to match your setup.
+For enhanced functionality and security, consider validating and sanitizing user inputs on the server side.
+This guide should help you activate and run the provided code examples. If you encounter any issues, refer to the documentation of the tools and libraries you are using.
