@@ -1,6 +1,6 @@
 html {
   background-color: #e4e9fd;
-  background-image: -webkit-linear-gradient(65deg, #a683e3 50%, #e4e9fd 50%);
+  background-image: -webkit-linear-gradient(65deg, #e0a123 50%, #4a4d5a 50%);
   min-height: 1000px;
   font-family: "Ubuntu Sans Mono", monospace;
 }
@@ -15,7 +15,7 @@ main {
   flex: 1 0 auto;
 }
 h1 {
-  color: #fff;
+  color: #4a4d5a;
   padding: 10px;
 }
 
@@ -28,7 +28,7 @@ h1 {
 }
 
 #heading {
-  background-color: #a683e3;
+  background-color: #e0a123;
   text-align: center;
 }
 form.edit {
@@ -68,7 +68,7 @@ button.add {
   width: 50px;
   border-radius: 50%;
   border-color: transparent;
-  background-color: #a683e3;
+  background-color: #e0a123;
   color: #fff;
   font-size: 30px;
   border-width: 0;
@@ -98,7 +98,7 @@ input[type="text"] {
 
 input[type="text"]:focus {
   outline: none;
-  box-shadow: inset 0 -3px 0 0 #a683e3;
+  box-shadow: inset 0 -3px 0 0 #e0a123;
 }
 
 ::placeholder {
